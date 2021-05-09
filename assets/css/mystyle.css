@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700&display=swap');
+
+/*
+	A positioning for all the pages.
+*/
+
+* { margin: 0px;
+	padding: 0px;
+	font-family: lato; }
+
+body{
+		background-color: #e3e6fc;	
+	}
+
+img{
+		transition:200ms;
+	}
+img:hover{
+transform:scale(1.2);
+}
+
+/*
+	Smoth scroll helps the go-to-top move easily.
+*/
+
+html { scroll-behavior: smooth;
+		margin: 0px; }
+
+
+/*
+	Basic formatting and positioning for the header i.e the logo and nav bar
+*/
+
+header { height: 80px;
+			width: 100%;
+			background-color: #32397C;
+			position: fixed;
+			top: 0;
+			z-index: +1; }
+
+
+
+
+.site-logo { margin: 15px 0px 15px 60px;
+			height: 50px;
+			width: auto;
+			 }
+
+nav { float: right;
+		height: 100%; }
+
+.menu-bttn { display: block; font-size: 18px;
+	color: white;
+	padding: 30px 30px 20px 0px;}
+
+	.menu { padding: 30px 60px 30px 0px;
+		background-color: #32397C;
+		width: 100%;
+		display: none;
+		position: absolute;
+		margin-left: -200px;
+		margin-top: 60px;
+	    height: 400px;
+    overflow: scroll;}
+
+
+/* .menu { padding: 30px 60px 30px 0px;
+		display: none; } */
+/* 
+.menu-item { display: block;
+				font-weight: 300;
+				margin-left: 18px;
+				text-decoration: none;
+				 } */
+
+.menu-item { display: block;
+				font-weight: 300;
+				margin-left: 18px;
+				text-decoration: none;
+				padding: 10px;
+				font-size: 20px;
+				 }
+/*
+	Active and inactive decides which page remains highlighed. This is done for customer ease of use.
+*/
+
+.inactive { color: #ffffff;
+			opacity: 100%; }
+
+.inactive:hover { color: #ffffff;
+			opacity: 60%;
+			transition-duration: 0.3s; }
+
+.active { color: #FFF80A;
+			 }
+
+a { text-decoration: none;
+	color: inherit;
+		opacity: 100%;
+		transition-duration: 0.2s; }
+
+/*
+    Banner area is for index and banner area-2 is for the inner context (about, mumbai...)
+*/
+
+
+.banner-area { height: 500px; }
+
+.banner-area-2 { height: 200px; }
+
+
+/*
+	This is used to set the banner and fix it with a text on it.
+*/
+
+
+
+.background-banner { 
+						width: 100%;
+						height: inherit; 
+						background-image: url("../images/index/background.jpg");
+					background-size: 120%;
+				background-position: 0px 650px  ;}
+
+
+
+.overlay { height: inherit;
+			width: 100%;
+			background: rgb(50,57,124);
+			background: linear-gradient(90deg, rgba(50,57,124,0.6) 10%, rgba(50,57,124,0) 100%);
+			position: absolute; }
+
+.banner-text { position: relative;
+				margin-top: -200px;
+				padding: 0px 0px 0px 60px; }
+
+.banner-text-2 { position: relative;
+				margin-top: -80px;
+				padding: 0px 0px 0px 60px; }
+
+
+h1 { color: white;
+		font-weight: 600;
+		font-size: 50px;
+		 }
+
+h2 { font-weight: 400;
+		font-size: 40px;
+		line-height: 60px;
+		padding: 10px 0px 20px 0px;
+		color: #32397C;
+		 }
+
+h3 { color: white;
+		font-weight: 600;
+		font-size: 40px;
+		 }
+
+/*
+		 Additing basic positioning to the content of the area.
+*/
+
+
+
+.body-text { font-weight: 300;
+			font-size: 18px;
+			line-height: 30px; }
+
+button { padding: 10px 16px 10px 16px;
+		font-size: 14px;
+		text-transform: uppercase;
+		border-radius: 10px;
+		border: none;
+		background-color: #FFF80A;
+		margin: 16px 0px;
+		transition-duration: 0.1s;
+		cursor: pointer;
+		 }
+
+button:hover { 
+		padding: 10px 10px 10px 22px;
+		transition-duration: 0.3s;
+		 }
+
+/*
+		 With the help of grid, the page can be divided into 1/2. An image on one side, a text on the other.
+*/
+
+
+.grid-2 { display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
+		margin: 80px 0px; }
+
+.tile-img { width: inherit;
+			 }
+
+.image-on-tile { width: 100%; }
+
+.tile-text { width: inherit;
+			
+			padding: 80px; }
+
+.float-right { float: right; }
+
+.float-left { float: left; }
+
+
+
+/*
+	The footer is styled to contain the go to top action.
+*/
+
+
+footer { background-color: #32397C;
+	height: 80px;
+	padding: 20px 60px 0px 60px;
+	margin: 0px; }
+
+.footer-text { color: white;
+font-weight: 200;
+padding: 20px 0px; }
+
+
+
+
+/*
+	Constraining the display to none on mobile.
+*/
+
+
+.desktop-only { display: block; }
+
+.mobile-only { display: none; }
+
+/*
+	refTable is used to display the contents on the refernce and documentation page.
+*/
+
+
+.refTable{
+	margin-top: 80px;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+
+.refTable tr{
+	padding: 10px 20px;
+}
+
+.image1{
+	width: 120px;
+	padding: 20px;
+	height: 120pxx;
+}
+
+/*
+	col1,2,3 for equal padding on the reference page.
+*/
+
+.col1{
+	width: 300px;
+}
+
+.col2{
+	width: 250px;
+}
+
+.col3{
+	width: 700px;
+}
+
+
+    ul {
+    width: 60%;
+    margin: auto;
+}
+
+
+ul.list{
+	font: lato;
+	font-size: large;
+	list-style-type: square
+
+}
+
+list h2{
+	padding: 10px ;
+	 list-style-type: square;
+}
+
+*{
+	box-sizing: border-box;
+	}
+
+
+
+#form{
+	margin: 0 auto; 
+width:250px;
+}
+	
+#form div {
+	margin: 1em;
+	}
+
+#form div label {
+
+	float: left;
+	margin-left: 10px;
+}
+
+#form div.radio {
+	float: left;
+}
+
+.button {
+padding: 15px 25px;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #04AA6D;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+max-width: 140px;
+margin:0 auto;
+
+}
+.button button{
+	max-width: 140px;
+margin:0 auto;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.button {
+	height: 52px;
+	outline: none;
+	border: 1px dotted red;
+	max-width:200px;
+	width:100%;
+	background-color :aquamarine;
+}
+
+label {
+	font-weight: 700;
+	font-size: 0.938rem;
+
+}
+form > div{
+	
+	display: flex;
+flex-direction: row;
+	margin-left: 450px;
+	width: 50px;
+	align-items: center;
+	
+	
+}
+
+.table-hover{
+	margin-left:auto; margin-right:auto;
+}
+
+
+/*
+	Designing new positioning for mobile
+*/
+
+
+
+@media only screen and (max-width: 1200px)
+  {
+
+.desktop-only { display: none; }
+
+.mobile-only { display: block; }
+
+header { 
+			position: fixed;
+			top: 0;
+			z-index: +1; }
+
+
+.background-banner { background-position: 50%;
+						width: 100%;
+						height: inherit; }
+
+.site-logo { margin: 20px 0px 20px 30px;
+			height: 40px;
+			width: auto;
+			 }
+
+.menu { padding: 30px 60px 30px 0px;
+		background-color: #32397C;
+		width: 100%;
+		display: none;
+		position: absolute;
+		margin-left: -200px;
+		margin-top: 60px;}
+
+.menu-bttn { display: block;
+				font-size: 18px;
+				color: white;
+				padding: 30px 30px 20px 0px;
+
+  	}
+
+.menu-item { display: block;
+				font-weight: 300;
+				margin-left: 18px;
+				text-decoration: none;
+				padding: 10px;
+				font-size: 20px;
+				 }
+
+.banner-area { height: 500px; }
+
+.banner-area-2 { height: 200px; }
+
+.banner-text { position: relative;
+				margin-top: -200px;
+				padding: 0px 0px 0px 60px; }
+
+.banner-text-2 { position: relative;
+				margin-top: -80px;
+				padding: 0px 0px 0px 60px; }
+
+
+h1 { color: white;
+		font-weight: 600;
+		font-size: 40px;
+		 }
+
+h2 { font-weight: 400;
+		font-size: 30px;
+		line-height: 40px;
+		padding: 10px 0px 20px 0px;
+		color: #32397C;
+		 }
+
+h3 { color: white;
+		font-weight: 600;
+		font-size: 30px;
+		 }
+
+.body-text { font-weight: 300;
+			font-size: 18px;
+			line-height: 30px; }
+
+
+.grid-2 { display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+		
+		margin: 80px 0px; }
+
+
+.tile-img { width: inherit;
+			height: 100%; }
+
+.image-on-tile { width: 100%; }
+
+.tile-text { width: inherit;
+			padding: 30px; 
+		}
+
+footer { background-color: #32397C;
+	height: 80px;
+	padding: 20px 30px 0px 30px;
+	margin: 0px; }
+
+.footer-text { color: white;
+font-weight: 200;
+padding: 20px 0px; }
+}
+
+
+*{
+	box-sizing: border-box;
+	}
+
+
+
+form{
+	margin:0px;
+	padding: 0px;
+}
+	
+form div {
+	margin: 1em;
+	}
+
+form div label {
+
+	float: left;
+	margin-left: 10px;
+}
+
+form div.radio {
+	float: left;
+}
+
+.button {
+padding: 15px 25px;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #04AA6D;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+max-width: 140px;
+margin:0 auto;
+
+}
+.button button{
+	max-width: 140px;
+margin:0 auto;
+}
+
+.button:hover {background-color: #fff}
+
+.button:active {
+background-color: #f3f3f3;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.button {
+	height: 52px;
+	outline: none;
+	border: 3px double white;
+	max-width:200px;
+	width:100%;
+	background-color :#e3e6fc;
+}
+
+label {
+	font-weight: 700;
+	font-size: 0.938rem;
+
+}
+form > div{
+	
+	display: flex;
+flex-direction: row;
+	margin-left: 450px;
+	width: 50px;
+	align-items: center;
+	
+	
+}
+
+.table-hover{
+	margin-left:auto; margin-right:auto;
+	border-collapse: collapse;
+}
+  
+.table-hover td, th {
+	border: 1px solid #999;
+	padding: 0.5rem;
+	text-align: left;
+  }
+
+  .table-hover thead tr {
+    background-color: #32397C;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table-hover th,
+.table-hover td {
+    padding: 12px 15px;
+}
+
+.table-hover tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-hover tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table-hover tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.table-hover tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.mapouter {
+	position: relative;
+	text-align: right;
+	height: 500px;
+	width: inherit;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 500px;
+	width: 800px;
+}
